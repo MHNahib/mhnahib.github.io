@@ -19,7 +19,7 @@ export const Hero = () => {
           />
         </div>
         <div className="p-4 flex flex-col justify-center items-center space-y-4 lg:text-left">
-          <div className="space-y-4">
+          <div className="space-y-4 font-semibold">
             <p className="text-lg">Hello world,</p>
             <h1 className="font-bold text-black text-3xl sm:text-4xl lg:text-5xl">
               I'm M. H. Nahib

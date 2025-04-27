@@ -77,7 +77,7 @@ export default function Index() {
       <Header />
       <Hero />
       <div className="flex flex-col items-center justify-center w-full h-auto p-4">
-        <h4 className="text-4xl font-bold text-gray-800 mb-4">Life Timeline</h4>
+        <h4 className="text-4xl font-bold text-gray-800 mb-4">Life Events</h4>
         <div className=" p-4 items-center flex justify-center">
           <div className="w-full max-w-4xl">
             <Timeline timelineItems={timelineItems} />

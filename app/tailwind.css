@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-white text-[#181819] font-primary;
+
+  --primary-font: "Roboto Mono", monospace !important;
+  --secondary-font: "Oswald", sans-serif !important;
+  --btn-font: "Lato", sans-serif;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+.font-primary {
+  font-family: var(--primary-font);
+}
+
+.font-secondary {
+  font-family: var(--secondary-font);
+}
+
+.font-btn {
+  font-family: var(--btn-font);
+}

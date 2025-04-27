@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Footer } from "~/components/footer.component";
 import { Header } from "~/components/header.component";
 import { Hero } from "~/components/hero.component";
 import { TechWorkingOn } from "~/components/techWorkingOn.component";
@@ -211,6 +212,7 @@ export default function Index() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

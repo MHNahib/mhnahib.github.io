@@ -1,18 +1,29 @@
+import { Hero } from "~/components/hero.component";
 import type { MetaFunction } from "@remix-run/node";
-import { FloatingDownload } from "~/components/floatingDownload.component";
 import { Footer } from "~/components/footer.component";
 import { Header } from "~/components/header.component";
-import { Hero } from "~/components/hero.component";
-import { ProjectCard } from "~/components/projectCard.component";
-import { ProjectWrapper } from "~/components/projectWrapper.component";
-import { TechWorkingOn } from "~/components/techWorkingOn.component";
 import { Timeline } from "~/components/timeline.component";
 import { TimelineItemModel } from "~/models/timeline.model";
+import { TechWorkingOn } from "~/components/techWorkingOn.component";
+import { ProjectWrapper } from "~/components/projectWrapper.component";
+import { BlogWrapperComponent } from "~/components/blogWrapper.component";
+import { FloatingDownload } from "~/components/floatingDownload.component";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Hi, I'm M. H. Nahib - Software Engineer and Developer" },
+    {
+      name: "description",
+      content:
+        "Explore the portfolio and projects of M. H. Nahib, a dedicated Software Engineer with expertise in modern web development technologies.",
+    },
+    {
+      name: "keywords",
+      content:
+        "Software Engineer, Web Developer, Solution Architect, React, Node.js, Portfolio, Projects",
+    },
+    { name: "author", content: "M. H. Nahib" },
+    { name: "viewport", content: "width=device-width, initial-scale=1" },
   ];
 };
 
@@ -215,6 +226,8 @@ export default function Index() {
           </div>
         </div>
       </div>
+
+      <BlogWrapperComponent />
 
       <ProjectWrapper />
       <FloatingDownload />

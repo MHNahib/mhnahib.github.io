@@ -17,7 +17,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   liveDemo,
 }) => {
   return (
-    <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96">
+    <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full">
       <div className="mx-3 mb-0 border-b border-slate-200 pt-3 pb-2 px-1">
         <h4 className="text-xl text-slate-600 font-bold">{title}</h4>
       </div>

@@ -8,7 +8,7 @@ import {
 
 export const Hero = () => {
   return (
-    <div className="w-full my-8 p-4">
+    <div className="w-full my-8 p-4" id="#about">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="flex justify-center items-center">
           <img
@@ -65,21 +65,21 @@ export const Hero = () => {
             <div className="flex flex-wrap justify-center lg:justify-start space-x-4 items-center text-base sm:text-lg font-bold">
               <p>Social </p>
               <a
-                href="https://facebook.com/mhnahib"
+                href="https://www.facebook.com/profile.php?id=100082163725531"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FacebookIcon />
               </a>
               <a
-                href="https://twitter.com/mhnahib"
+                href="https://twitter.com/HNahib"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <TwitterIcon />
               </a>
               <a
-                href="https://hashnode.com/@mhnahib"
+                href="https://mhnahib.hashnode.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

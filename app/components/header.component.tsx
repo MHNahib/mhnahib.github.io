@@ -6,10 +6,10 @@ export const Header = () => {
 
   const navLinks: NavLinkModel[] = [
     { name: "About Me", href: "#about" },
-    { name: "Education", href: "#education" },
+    { name: "Events", href: "#events" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
-    { name: "Experience", href: "#experience" },
+    { name: "Blog", href: "https://mhnahib.hashnode.dev/" },
   ];
 
   const handleNavToggle = () => {

@@ -1,5 +1,6 @@
 import React from "react";
-import { GithubIcon, LinkIcon, OverviewIcon } from "./icon.component";
+import { GithubIcon, LinkIcon } from "./icon.component";
+import { getReleventTech } from "~/common/techList";
 
 interface ProjectCardProps {
   title: string;
@@ -26,11 +27,17 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <span className="mb-2 text-slate-800 text-lg font-semibold">
           Technologies
         </span>
-        <p className="text-slate-600 leading-normal font-light">
-          The place is close to Barceloneta Beach and bus stop just 2 min by
-          walk and near to Naviglio where you can enjoy the main night life in
-          Barcelona.
-        </p>
+        <div className="flex gap-2 flex-wrap items-center">
+          {technologies.map((tech, index) => (
+            <img
+              key={index}
+              src={getReleventTech(tech).icon}
+              alt={title + " Project of M. H. Nahib (Software Engineer)"}
+              className="w-8 h-8"
+              loading="lazy"
+            />
+          ))}
+        </div>
       </div>
 
       <div className=" mb-0 border-b border-slate-200 pt-3 pb-4 px-1 flex items-center justify-around gap-4 bg-gray-100 hover:bg-green-300 transition-all duration-300 ease-in-out">

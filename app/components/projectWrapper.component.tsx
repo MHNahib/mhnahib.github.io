@@ -84,7 +84,7 @@ export const ProjectWrapper = () => {
     },
   ];
   return (
-    <div className="w-full h-auto py-4">
+    <div className="w-full h-auto py-4" id="projects">
       <div className="container mx-auto text-center my-2">
         <h2 className="text-3xl font-semibold mb-6">Project Showcase</h2>
         <div className="h-1 bg-green-300 mx-auto w-24 mb-8"></div>

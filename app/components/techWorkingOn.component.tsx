@@ -6,7 +6,7 @@ export const TechWorkingOn = ({
   technologies: TechWorkingOnModel[];
 }) => {
   return (
-    <div className="w-full">
+    <div className="w-full" id="skills">
       <div className="px-6">
         <section className="py-12 ">
           <div className="container mx-auto text-center">

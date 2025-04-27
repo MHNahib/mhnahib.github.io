@@ -3,6 +3,7 @@ import { FloatingDownload } from "~/components/floatingDownload.component";
 import { Footer } from "~/components/footer.component";
 import { Header } from "~/components/header.component";
 import { Hero } from "~/components/hero.component";
+import { ProjectCard } from "~/components/projectCard.component";
 import { TechWorkingOn } from "~/components/techWorkingOn.component";
 import { Timeline } from "~/components/timeline.component";
 import { TimelineItemModel } from "~/models/timeline.model";
@@ -211,6 +212,18 @@ export default function Index() {
           <div className="w-full max-w-4xl">
             <Timeline timelineItems={timelineItems} />
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col items-center justify-center w-full h-auto p-4">
+        <h4 className="text-4xl font-bold text-gray-800 mb-4">Life Events</h4>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
+          <ProjectCard
+            title="bd-phone-number-validator"
+            technologies={["JavaScript", "Node.js", "Express.js"]}
+            tags={["npm-package", "javascript", "node.js", "express.js"]}
+            github="https://github.com/MHNahib/bd-phone-number-validator"
+            liveDemo="https://www.npmjs.com/package/bd-phone-number-validator"
+          />
         </div>
       </div>
       <FloatingDownload />

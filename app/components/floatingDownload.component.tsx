@@ -1,7 +1,7 @@
 import { DownloadIcon } from "./icon.component";
 
 const cvURL =
-  "https://drive.google.com/file/d/1glw7_W0tJWJ7THAyYHDFmA1qJsZVtldq/view?usp=sharing";
+  "https://drive.google.com/file/d/1de19QGNvAWAzAStCNBYCNptFVgK0SJXp/view";
 
 export const FloatingDownload = () => {
   return (
